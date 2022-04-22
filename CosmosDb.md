@@ -122,4 +122,3 @@ As with the earlier example, this query will also filter to a single partition. 
 Here's a query that has a range filter on the partition key and won't be scoped to a single physical partition. In order to be an in-partition query, the query must have an equality filter that includes the partition key:
       SELECT * FROM c WHERE c.DeviceId > 'XMS-0001'
 
-
